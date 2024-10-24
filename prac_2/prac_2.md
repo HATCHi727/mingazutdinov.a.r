@@ -1,30 +1,28 @@
 # Практическое занятие №2. Менеджеры пакетов
 
-П.Н. Советов, РТУ МИРЭА
+А.Е. Беляев, РТУ МИРЭА
 
 ## Задача 1
 
 Вывести служебную информацию о пакетах matplotlib. Разобрать основные элементы содержимого фацла со служебной информацией из пакета. Как получить пакет без манеджера пакетов, прямо из репозитория?
-
-![Задание 1](https://github.com/teeeema/mingazutdinov.a.r/blob/main/prac_2/1.jpg)
 
 ```
 pip install git+https://github.com/matplotlib/matplotlib.git
 cd matplotlib
 python setup.py install
 ```
+![1](https://github.com/user-attachments/assets/49e675e6-35cc-4c9c-9f7b-ba906029d6a5)
 
 ## Задача 2
 
 Вывести служебную информацию о пакетах express. Разобрать основные элементы содержимого файла со служебной информацией пакета. Как получить пакет без менеджреа пакетов, прямо из репозитория?
 
-![Задание 3](https://github.com/teeeema/mingazutdinov.a.r/blob/main/prac_2/2.jpg)
+![2](https://github.com/user-attachments/assets/e5d47796-db34-4506-ae21-06801b6be4f4)
 
 ## Задача 3
 
-Сформировать graphiz-код и получить изображения зависимостей matplotlib и express
 
-![Задание 3](https://github.com/teeeema/mingazutdinov.a.r/blob/main/prac_2/3.png)
+Сформировать graphiz-код и получить изображения зависимостей matplotlib и express
 
 ```
 digraph matplotlib_deps {
@@ -50,7 +48,7 @@ digraph matplotlib_deps {
 
 Изучить основы программирования в ограничениях. Решить задачу о счастливых билетах. Добавить ограничение на то, что все цифры билета должны быть различными. Найти минимальное решение для суммы 3 цифр.
 
-![Задание 4](https://github.com/teeeema/mingazutdinov.a.r/blob/main/prac_2/4.jpg)
+![4](https://github.com/user-attachments/assets/9b08a826-db03-4d56-a87d-f9ceef24bf19)
 
 ```
 include "globals.mzn";  
@@ -70,7 +68,7 @@ output [
 
 Решить на MiniZinc задачу о зависимостях пакетов для рисунка, приведенного ниже.
 
-![Задание 5](https://github.com/teeeema/mingazutdinov.a.r/blob/main/prac_2/5.jpg)
+![5](https://github.com/user-attachments/assets/ab32d5c5-8cc9-4b39-b9dd-42e03c193d32)
 
 ```
 enum Menu = { M1_0_0, M1_1_0, M1_2_0, M1_3_0, M1_4_0, M1_5_0 };
@@ -98,7 +96,7 @@ output [
 
 Решить на MiniZinc задачу о зависимостях пакетов для следующих данных:
 
-![Задание 6](https://github.com/teeeema/mingazutdinov.a.r/blob/main/prac_2/6.jpg)
+![6](https://github.com/user-attachments/assets/3cdeea9d-79cc-4b77-b940-dcc98e2bdc7b)
 
 ```
 int: root = 100;
@@ -133,7 +131,7 @@ solve satisfy;
 
 ## Задание 7
 
-![Задание 7](https://github.com/teeeema/mingazutdinov.a.r/blob/main/prac_2/7.jpg)
+![7](https://github.com/user-attachments/assets/ffbee805-e6b0-438c-aec2-e9e3685678f6)
 
 ```
 int: n;  % Общее количество пакетов
